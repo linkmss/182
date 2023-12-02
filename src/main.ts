@@ -4,6 +4,7 @@ import type { UserModule } from './types'
 import App from './App.vue'
 import { routerOptions } from '@/router'
 
+import '@/assets/sass/main.sass'
 import '@unocss/reset/tailwind-compat.css'
 
 // install plugins
