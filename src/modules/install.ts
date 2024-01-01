@@ -1,3 +1,3 @@
-import type { UserModule } from '@/types'
+import type { Installable } from '@/types'
 
-export const install: UserModule = () => {}
+export const install: Installable = () => {}

@@ -1,8 +1,13 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
   <div>
-    123
+    footer
   </div>
 </template>
+
+<style scoped>
+
+</style>

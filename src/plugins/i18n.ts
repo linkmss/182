@@ -1,6 +1,6 @@
 import type { Locale } from 'vue-i18n'
 import { createI18n } from 'vue-i18n'
-import type { UserModule } from '~/types'
+import type { Installable } from '@/types'
 
 // Import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
@@ -44,7 +44,7 @@ export async function loadLanguageAsync(lang: string): Promise<Locale> {
   return setI18nLanguage(lang)
 }
 
-export const install: UserModule = ({ app }) => {
+export const install: Installable = ({ app }) => {
   app.use(i18n)
   loadLanguageAsync('en').then(null)
 }
